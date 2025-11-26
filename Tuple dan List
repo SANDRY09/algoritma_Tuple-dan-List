@@ -1,0 +1,31 @@
+#contoh list
+#list (mutble)
+my_list = [10, 20, 30, 40, 50]
+print(my_list)
+print(F"list awal : {my_list}")
+
+#mengubah elemen list (diperbolehkan)
+my_list[2] = 99
+print(f"list diubah: {my_list}")
+
+#menambahkan elemen ke list (diperbolehkan)
+my_list.append(60)
+print(f"list ditambah: {my_list}")
+
+#contoh tuple
+#tuple (immutble)
+my_tuple = (10, 20, 30, 40, 50)
+print(f"\nTuple awal : {my_tuple}")
+
+# mencoba mengubah elemen tuple (tidak diperbolehkan)
+try:
+    my_tuple [2] = 99
+except TypeError as e:
+    print(f"Error saat mengubah tuple: {e}")
+
+    #mencoba menambahkan elemen ke tuple (juga akan menghasilkan error)
+    try:
+        my_tuple.append(60)
+    except AttributeError as e:
+
+        print(F"Error saat menambahkan elemen ke tuple: {e}")
